@@ -77,8 +77,14 @@ class Fotos extends React.Component {
         let rows= this.state.data.map((row, i)=>{
 
             let fotos = this.getCards(row.fotos);
+
+            let miClaseBorde;
+
+            if (row.id==98) miClaseBorde= "D98";
+            if (row.id==99) miClaseBorde= "D99";
+            if (row.id==100) miClaseBorde= "D100";
         
-            return  <Row>{fotos}</Row>
+            return  <Row className={miClaseBorde} >{fotos}</Row>
         });
 
         return rows;

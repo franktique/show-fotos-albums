@@ -4,10 +4,12 @@ import './App.css';
 
 import Fotos from './componentes/Fotos';
 
-import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './stilos.css'; 
 
 function App() {
   return (
